@@ -36,6 +36,7 @@ let package = Package(
         .product(
           name: "OpenCombineShim",
           package: "OpenCombine",
+          condition: .when(platforms: [.linux, .android])
         ),
       ]
     ),
